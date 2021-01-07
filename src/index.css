@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0 8%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,43 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /*justify-content: space-between;*/
+}
+.weatherWrapper{
+  width: 500px;
+  text-align: center;
+  background: url("https://images.theconversation.com/files/232705/original/file-20180820-30593-1nxanpj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip");
+  background-size: cover;
+  color: #fff;
+  padding-top: 150px;
+}
+.search-box{
+  text-align: center;
+  margin: 10px 0 50px 0;
+}
+.search-bar{
+  border: 2px solid #282c34;
+  padding: 5px 15px;
+  font-size: 18px;
+  width: 250px;
+  border-radius: 5px;
+}
+.location{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.temp{
+  font-weight: 600;
+  font-size: 40px;
+}
+.weather{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
 }
