@@ -16,9 +16,9 @@ function App() {
         fetch(`${api.base}weather?lat=${data.lat}&lon=${data.lon}&APPID=${api.key}`)
             .then(res => res.json())
             .then(result => {
-                setWeather(result);
+                setWeather(result)
                 setLatLng(result.coord)
-                setQuery('');
+                setQuery(result.name);
             });
     }
     const search = evt => {
@@ -28,7 +28,7 @@ function App() {
                 .then(result => {
                     setWeather(result);
                     setLatLng(result.coord)
-                    setQuery('');
+                    // setQuery('');
                 });
         }
     }
